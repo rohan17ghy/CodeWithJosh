@@ -7,11 +7,13 @@ export default {
   theme: {
     extend: {
         colors:{
-            'custom-icon': '#11152c',
+            'custom-iconBackground': '#11152c',
             'custom-iconBorder': '#151931',
             'custom-bg': '#12172a',
             'custom-border': '#4f5876',
-            'custom-bg-hour': '#262b42'
+            'custom-bg-hour': '#262b42',
+            'custom-iconColor': '#8a8ac8',
+            'custom-courseOverviewText': '#a4aad3'
         }
     },
     container: {

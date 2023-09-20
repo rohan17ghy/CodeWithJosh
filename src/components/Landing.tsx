@@ -1,6 +1,7 @@
 import ButtonCourse from './ButtonCourse'
 import { AspectRatio } from '@mantine/core';
 import { ArrowSmallRightIcon } from '@heroicons/react/20/solid';
+import Gradient from './Gradient';
 
 const Landing = () => {
   return (
@@ -16,10 +17,7 @@ const Landing = () => {
                     </ButtonCourse>
                 </div>
                 <div className="bg-gradient-to-r from-[#11152c] to-[#0e1139] rounded-lg select-none border border-indigo-900 relative">
-                    <div className="flex flex-row">
-                        <div className="h-[1px] bg-gradient-to-r from-transparent via-pink-500 to-violet-600 w-full"></div>
-                        <div className="h-[1px] bg-gradient-to-r from-violet-600 to-transparent w-full"></div>
-                    </div>
+                    <Gradient/>
                     <div className="px-8 py-5">
                         <div className="flex flex-row space-x-2">
                             <div className="rounded-full bg-red-400 w-3 h-3"></div>
@@ -64,28 +62,28 @@ const Landing = () => {
         <div className='grid grid-cols-2 gap-4 md:grid-cols-4 justify-center mx-auto my-20 max-w-[900px]'>
             <div>
                 <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-3/4 mx-auto"></div>
-                <div className='flex flex-col text-center p-8 border-custom-iconBorder border-2 bg-custom-icon rounded-md'>                
+                <div className='flex flex-col text-center p-8 border-custom-iconBorder border-2 bg-custom-iconBackground rounded-md'>                
                     <p className='font-bold mb-2 text-violet-500 text-2xl md:text-3xl lg:text-4xl'>10M+</p>
                     <p className='text-sm lg:text-base text-gray-300'>Students taught</p>
                 </div>
             </div>
             <div>
                 <div className="h-[1px] bg-gradient-to-r from-transparent via-teal-400 to-transparent w-3/4 mx-auto"></div>
-                <div className='flex flex-col text-center p-8 border-custom-iconBorder border-2 bg-custom-icon rounded-md'>
+                <div className='flex flex-col text-center p-8 border-custom-iconBorder border-2 bg-custom-iconBackground rounded-md'>
                     <p className='font-bold mb-2 text-teal-400 text-2xl md:text-3xl lg:text-4xl'>3M+</p>
                     <p className='text-sm lg:text-base text-gray-300'>Youtube fans</p>
                 </div>
             </div>
             <div>
                 <div className="h-[1px] bg-gradient-to-r from-transparent via-fuchsia-400 to-transparent w-3/4 mx-auto"></div>
-                <div className='flex flex-col text-center p-8 border-custom-iconBorder border-2 bg-custom-icon rounded-md'>
+                <div className='flex flex-col text-center p-8 border-custom-iconBorder border-2 bg-custom-iconBackground rounded-md'>
                     <p className='font-bold mb-2 text-fuchsia-400 text-2xl md:text-3xl lg:text-4xl'>20+</p>
                     <p className='text-sm lg:text-base text-gray-300'>Years of experience</p>
                 </div>
             </div>
             <div>
                 <div className="h-[1px] bg-gradient-to-r from-transparent via-orange-400 to-transparent w-3/4 mx-auto"></div>
-                <div className='flex flex-col text-center p-8 border-custom-iconBorder border-2 bg-custom-icon rounded-md'>
+                <div className='flex flex-col text-center p-8 border-custom-iconBorder border-2 bg-custom-iconBackground rounded-md'>
                     <p className='font-bold mb-2 text-orange-400 text-2xl md:text-3xl lg:text-4xl'>45</p>
                     <p className='text-sm lg:text-base text-gray-300'>Coding Courses</p>
                 </div>
