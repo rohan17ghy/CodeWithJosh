@@ -1,8 +1,15 @@
 import {ReactNode} from 'react';
 
-const ButtonCourse = ({ className, children }: {className?: string, children?: ReactNode}) => {
+type ButtonCourseProps = {
+    className?: string,
+    children?: ReactNode,
+    padding?: string,
+    text?: string,
+}
+
+const ButtonCourse = ({ className, children, padding = 'px-6 py-3', text = 'text-sm' }: ButtonCourseProps) => {
   return (
-    <button className={`btn flex rounded-full uppercase px-6 py-3 tracking-wider items-center justify-center text-sm text-white ${className}`}>{children}</button>
+    <button className={`btn flex rounded-full uppercase ${padding} tracking-wider font-medium md:font-semibold items-center justify-center ${text} text-white ${className}`}>{children}</button>
   )
 }
 

@@ -11,7 +11,7 @@ const Landing = () => {
                 <div className='p-2 pb-20 md:pb-10 lg:pt-10 xl:max-w-xl'>
                     <h1 className='text-4xl lg:text-[2.6rem] text-white font-extrabold leading-10 lg:leading-[2.9rem]'>Become the <span className='text-green-300'>software engineer</span> that companies <span className='text-pink-500'>love to hire</span></h1>
                     <p className='text-gray-300 text-lg md:text-xl my-5 md:my-7'>All the <strong className='text-white'>coding courses</strong> you need to excel <strong className='text-white'>in one place.</strong></p>
-                    <ButtonCourse className='font-medium bg-gradient-to-r from-pink-500 to-violet-600 group'>
+                    <ButtonCourse className='bg-gradient-to-r from-pink-500 to-violet-600 group'>
                         View Courses
                         <ArrowSmallRightIcon className='w-6 h-6 fill-slate-50  group-hover:ml-3'></ArrowSmallRightIcon>
                     </ButtonCourse>

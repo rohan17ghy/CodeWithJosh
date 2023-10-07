@@ -11,4 +11,6 @@ body{
     background-size: cover;
     background-color: rgb(13 18 36);
     color: rgb(211 216 232);
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
 }

@@ -11,7 +11,7 @@ const CourseOverview = () => {
     return (
         <div className="mt-7">
             <Gradient/>
-            <div className=" rounded-md p-10 border-custom-iconBorder border-2 bg-custom-iconBackground">
+            <div className=" rounded-md p-12 border-custom-iconBorder border-2 bg-custom-iconBackground">
                 <h2 className="uppercase text-lg font-bold tracking-wide">Course Overview</h2>
                 <div className=" w-16 h-[5px] bg-gradient-to-r from-pink-500 to-violet-600 mt-4 mb-10"></div>
                 <ul>
