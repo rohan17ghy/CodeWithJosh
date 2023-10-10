@@ -9,8 +9,8 @@ const TargetStudent = ({className, points}: { className?: string, points: string
     return (
         <div className={`${className}`}>
             <ul>
-                {points.map(point => (                
-                    <li className="flex items-start space-x-2">
+                {points.map((point, index) => (                
+                    <li key={index} className="flex items-start space-x-2">
                         <div>
                             <BulletIcon className=" mr-2" />
                         </div>                        

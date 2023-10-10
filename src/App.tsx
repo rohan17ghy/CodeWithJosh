@@ -3,13 +3,14 @@ import Landing from './components/Landing'
 import Courses from './components/Courses'
 import { Routes, Route } from 'react-router-dom';
 import CourseDetails from './components/CourseDetails';
+import LearningPaths from './components/LearningPaths';
 
 
 function App() {
     const links = [
         {link: '#', label: 'Subscribe'},
         {link: 'courses', label: 'Courses'},
-        {link: '#', label: 'Learning Paths'},
+        {link: 'learningPaths', label: 'Learning Paths'},
         {link: '#', label: 'Forum'},
         {link: '#', label: 'Contact'},
     ]
@@ -27,6 +28,7 @@ function App() {
             <Route path='/' Component={Landing} />
             <Route path='courses' Component={Courses} />
             <Route path='courseDetails' Component={CourseDetails}/>
+            <Route path='learningPaths' Component={LearningPaths}/>
         </Routes>
     </div>
     

@@ -1,7 +1,16 @@
 import { useState } from "react"
 import DurationIcon from "./DurationIcon"
 
-const CourseCard = () => {
+export type CourseCard = {
+    title: string,
+    description: string,
+    duration: number,
+    newPrice: number,
+    oldPrice: number,
+    image: string
+} 
+
+export const CourseCard = ({course} : {course: CourseCard}) => {
   
     const [isPublished] = useState(true) 
     return (
@@ -11,17 +20,15 @@ const CourseCard = () => {
         </a>
         <div className="p-7">
             <div className="flex flex-nowrap justify-between mb-4">
-                <h2 className="text-white font-bold"><a className="hover:text-violet-400 cursor-pointer">Mastering Next.js 13 with TypeScript</a></h2>
+                <h2 className="text-white font-bold"><a className="hover:text-violet-400 cursor-pointer">{course.title}</a></h2>
                 <DurationIcon hour="11h"></DurationIcon>
             </div>
-            <p className="mb-4">Become the best coder you can be with unlimited access to all the existing and future courses</p>
+            <p className="mb-4">{course.description}</p>
             {isPublished ? 
-            <p className="font-bold text-lg text-white">$29/m<span className=" ml-2 font-normal text-base line-through">$149</span></p>:
+            <p className="font-bold text-lg text-white">${course.newPrice}/m<span className=" ml-2 font-normal text-base line-through">${course.oldPrice}</span></p>:
             <DurationIcon hour="Coming Soon" />
             }
         </div>
     </div>
     )
 }
-
-export default CourseCard

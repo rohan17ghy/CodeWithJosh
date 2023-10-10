@@ -3,10 +3,10 @@ import CourseOverview from "./CourseOverview"
 import { LearningPoints } from "./LearningPoints";
 import Rating from "./Rating"
 import { AspectRatio } from '@mantine/core';
-import { Bulb, ProfileIcon, Tasks } from "./svgs";
+import { Bulb, ProfileIcon, QuestionMark, Tasks } from "./svgs";
 import { CourseContent } from "./CourseContent";
 import TargetStudent from "./TargetStudent";
-import { BulletIcon } from "./svgs/BulletIcon";
+import Prerequisites from "./Prerequisites";
 
 const CourseDetails = () => {
     
@@ -69,7 +69,7 @@ const CourseDetails = () => {
                 </div>
                 <span className="text-teal-300 mb-3 inline-block font-medium md:font-semibold">A perfectly structured course</span>
                 <h2 className="text-3xl text-white font-extrabold mb-6">Course Content</h2>
-                <CourseContent className=" w-4/5" chapters={[]} />
+                <CourseContent className=" max-w-prose" chapters={[]} />
             </div>
             <div className="mx-4 mb-20">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full my-3 bg-indigo-950">
@@ -77,7 +77,15 @@ const CourseDetails = () => {
                 </div>
                 <span className="text-pink-400 mb-3 inline-block font-medium md:font-semibold">Target student</span>
                 <h2 className="text-3xl text-white font-extrabold mb-6">Who Is This For?</h2>
-                <TargetStudent className=" w-3/5" points={[]} />
+                <TargetStudent className=" max-w-prose" points={[]} />
+            </div>
+            <div className="mx-4 mb-20">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full my-3 bg-indigo-950">
+                    <QuestionMark className=" text-orange-400" />
+                </div>
+                <span className="text-orange-400 mb-3 inline-block font-medium md:font-semibold">What you should know</span>
+                <h2 className="text-3xl text-white font-extrabold mb-6">Prerequisites</h2>
+                <Prerequisites className=" max-w-prose" paras={[]} courses={[]} />
             </div>
             
         </div>  

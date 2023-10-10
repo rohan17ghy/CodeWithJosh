@@ -1,6 +1,6 @@
 import Select from "./Select"
 import TextBox from "./TextBox"
-import CourseCard from "./CourseCard"
+import {CourseCard} from "./CourseCard"
 
 const Courses = () => {
   return (
@@ -15,7 +15,13 @@ const Courses = () => {
         </div>
         <div className="container mx-auto mt-20  overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <CourseCard></CourseCard>
+                <CourseCard course={{ 
+                    title: 'Mastering Next.js 13 with TypeScript',
+                    description: 'Become the best coder you can be with unlimited access to all the existing and future courses',
+                    duration: 11,
+                    newPrice: 15, 
+                    oldPrice: 149, 
+                    image: 'https://codewithmosh.com/_next/image?url=https%3A%2F%2Fwww.filepicker.io%2Fapi%2Ffile%2FA90ijraxStiEoemCcNUn&w=384&q=75'}} />
             </div>
             
         </div>
