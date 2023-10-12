@@ -27,7 +27,7 @@ const LearningPaths = () => {
                         imgSrc="https://codewithmosh.com/_next/image?url=https%3A%2F%2Fwww.filepicker.io%2Fapi%2Ffile%2FA90ijraxStiEoemCcNUn&w=384&q=75"
                         content={
                             <>
-                                <a href="">
+                                <a href="front-end">
                                     <h2 className="text-left text-white text-xl font-extrabold hover:underline hover:cursor-pointer underline-offset-4" style={{ textDecorationColor: '#ff4bbe'}}>{learningPath.heading}</h2>
                                 </a>                                
                                 <p className="text-left">{learningPath.desc}</p>

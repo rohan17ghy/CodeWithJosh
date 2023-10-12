@@ -4,6 +4,7 @@ import Courses from './components/Courses'
 import { Routes, Route } from 'react-router-dom';
 import CourseDetails from './components/CourseDetails';
 import LearningPaths from './components/LearningPaths';
+import LearningPathDetails from './components/LearningPathDetails';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path='courses' Component={Courses} />
             <Route path='courseDetails' Component={CourseDetails}/>
             <Route path='learningPaths' Component={LearningPaths}/>
+            <Route path='front-end' Component={LearningPathDetails} />
         </Routes>
     </div>
     
