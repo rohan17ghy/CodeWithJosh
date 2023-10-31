@@ -1,3 +1,4 @@
+import VerticalStepper from "./VerticalStepper"
 
 const LearningPathDetails = () => {
 
@@ -27,6 +28,7 @@ const LearningPathDetails = () => {
                 <section className="mt-14">
                     <h2 className="text-3xl text-white uppercase font-bold mb-4">HTML and CSS</h2>
                     <p className="">Front-end development starts with HTML and CSS. These are the languages behind every web page on the Internet. My HTML/CSS series teaches you everything you need to know from absolute basics to advanced concepts.</p>
+                    <VerticalStepper />
                 </section>        
             </div>
         </div>

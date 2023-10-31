@@ -14,3 +14,4 @@ export { FileLines } from './FileLines';
 export { ProfileIcon } from './ProfileIcon';
 export {BulletIcon} from './BulletIcon';
 export {QuestionMark} from './QuestionMark';
+export {CircleFilled} from './CircleFilled';
