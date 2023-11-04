@@ -19,14 +19,23 @@ model Course{
     newPrice Int
     learningPoints String[]
     audience String[]
-    lessons Lesson[] 
+    chapters Chapter[] 
+}
+
+model Chapter{
+    id Int @id @default(autoincrement())
+    title String
+    courseId Int  
+    course Course @relation(fields: [courseId], references: [id])
+    lessons Lesson[]  
 }
 
 model Lesson{
     id Int @id @default(autoincrement())
-    isFile Boolean @default(true)
+    title String
+    isFile Boolean @default(false)
     isPrevAval Boolean @default(false)
-    duration Int @default(0)
-    courseId Int  
-    course Course @relation(fields: [courseId], references: [id])  
+    duration Int @default(0) //duration in seconds
+    chapterId Int
+    chapter Chapter @relation(fields: [chapterId], references: [id])
 }
