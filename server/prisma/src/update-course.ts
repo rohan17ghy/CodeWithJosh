@@ -16,10 +16,10 @@ async function main() {
                     data: {
                         lessons: {
                             create: [{
-                                title: 'Prerequisites',
-                                isPrevAval: true
+                                title: 'Questions and Support',
+                                isFile: true
                             },{
-                                title: 'Source Code',
+                                title: 'Connect with Me',
                                 isFile: true
                             }]
                         }                        
