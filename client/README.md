@@ -1,2 +1,0 @@
-# CodeWithJosh
-Course Selling Website
