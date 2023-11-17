@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "extends": "./base.json",
+    "Display": "Vite",
+    "compilerOptions": {
+      "allowJs": false,
+      "esModuleInterop": false,
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "useDefineForClassFields": true,
+      "module": "ESNext",
+      "noEmit": true,
+      "resolveJsonModule": true,
+      "skipLibCheck": false,
+      "target": "ESNext",
+      "types": ["vite/client"],
+
+      "composite": true,
+      "allowSyntheticDefaultImports": true,
+
+    
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noFallthroughCasesInSwitch": true,
+
+      "moduleResolution": "bundler",
+      "allowImportingTsExtensions": true,
+      "isolatedModules": true,
+      "jsx": "react-jsx",      
+    }
+  }
