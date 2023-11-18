@@ -1,10 +1,10 @@
-import { HeaderSimple } from './components/Header';
-import Landing from './components/Landing'
-import Courses from './components/Courses'
+import { HeaderSimple } from 'ui';
+import { Landing } from 'ui'
+import { Courses } from 'ui'
 import { Routes, Route } from 'react-router-dom';
-import CourseDetails from './components/CourseDetails';
-import LearningPaths from './components/LearningPaths';
-import LearningPathDetails from './components/LearningPathDetails';
+import { CourseDetails } from 'ui';
+import { LearningPaths } from 'ui';
+import { LearningPathDetails } from 'ui';
 
 
 function App() {

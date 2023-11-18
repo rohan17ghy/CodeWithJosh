@@ -12,10 +12,11 @@
     "tsconfig": "*",
     "turbo": "latest"
   },
-  "name": "CodeWithJosh",
+  "name": "codewithjosh",
   "packageManager": "yarn@1.22.17",
-  "workspaces": [
-    "apps/*",
+  "workspaces": [    
+    "apps/client",
+    "apps/server",
     "packages/*"
   ]
 }
