@@ -16,7 +16,6 @@ coverage
 .next/
 out/
 build
-*.tsbuildinfo
 
 # misc
 .DS_Store
@@ -57,3 +56,6 @@ lerna-debug.log*
 
 # Yarn
 yarn.lock
+
+#typescript
+*.tsbuildinfo

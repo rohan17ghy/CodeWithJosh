@@ -2,7 +2,10 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}"
+    "./src/**/*.{js,ts,jsx,tsx}",
+    
+    //https://www.willliu.com/blog/Why-your-Tailwind-styles-aren-t-working-in-your-Turborepo
+    "../../packages/ui/**/*{.js,.ts,.jsx,.tsx}",
   ],
   theme: {
     extend: {
