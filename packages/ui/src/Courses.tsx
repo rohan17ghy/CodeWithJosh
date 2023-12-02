@@ -1,6 +1,6 @@
-import Select from "./Select"
-import TextBox from "./TextBox"
-import {CourseCard} from "./CourseCard"
+import { Select } from "./select";
+import TextBox from "./TextBox";
+import {CourseCard} from "./CourseCard";
 
 const Courses = () => {
   return (

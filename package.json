@@ -14,7 +14,7 @@
   },
   "name": "codewithjosh",
   "packageManager": "yarn@1.22.17",
-  "workspaces": [    
+  "workspaces": [
     "apps/client",
     "apps/server",
     "packages/*"
