@@ -1,5 +1,4 @@
 import express from 'express';
-import prisma from 'db';
 import courseRoutes from './routes/course'; 
 
 
