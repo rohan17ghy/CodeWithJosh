@@ -1,14 +1,14 @@
 
-export const Tasks = ({className}: {className?: string}) => {
+export const Tasks = ({className}: {className?: string}): JSX.Element => {
     return (
         <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" className={`${className}`} strokeLinecap="round" strokeLinejoin="round" height="25" width="25" xmlns="http://www.w3.org/2000/svg">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M3.5 5.5l1.5 1.5l2.5 -2.5"></path>
-            <path d="M3.5 11.5l1.5 1.5l2.5 -2.5"></path>
-            <path d="M3.5 17.5l1.5 1.5l2.5 -2.5"></path>
-            <path d="M11 6l9 0"></path>
-            <path d="M11 12l9 0"></path>
-            <path d="M11 18l9 0"></path>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3.5 5.5l1.5 1.5l2.5 -2.5" />
+            <path d="M3.5 11.5l1.5 1.5l2.5 -2.5" />
+            <path d="M3.5 17.5l1.5 1.5l2.5 -2.5" />
+            <path d="M11 6l9 0" />
+            <path d="M11 12l9 0" />
+            <path d="M11 18l9 0" />
         </svg>
     )
 }

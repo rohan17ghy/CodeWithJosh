@@ -1,11 +1,6 @@
-import Card from "./Card"
+import {Card} from "./card"
 
-// type LearningPath = {
-//     heading: string,
-//     desc: string
-// }
-
-const LearningPaths = () => {
+const LearningPaths = ():JSX.Element => {
 
     const learningPaths = [{
         heading: "Fundamentals",

@@ -1,9 +1,9 @@
 // component exports
 export { Card } from "../card";
 
-export * from './Header';
-export * from './Landing';
-export * from './Courses';
-export * from './CourseDetails';
+export * from './header';
+export * from './landing';
+export * from './courses';
+export * from './course-details';
 export * from './LearningPaths';
-export * from './LearningPathDetails';
+export * from './learning-path-details';

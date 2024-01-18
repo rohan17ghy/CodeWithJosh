@@ -1,8 +1,8 @@
 import { useState } from "react"
-import DurationIcon from "./DurationIcon"
-import Card from "./Card"
+import {DurationIcon} from "./duration-icon"
+import { Card } from "./card"
 
-export type CourseCard = {
+export interface CourseCard {
     title: string,
     description: string,
     duration: number,
@@ -11,9 +11,9 @@ export type CourseCard = {
     image: string
 } 
 
-export const CourseCard = ({course} : {course: CourseCard}) => {
+export const CourseCard = ({course} : {course: CourseCard}):JSX.Element => {
   
-    const [isPublished] = useState(true) 
+    const [isPublished, setIsPublished] = useState(true) 
     return (
         <Card
             imgSrc="https://codewithmosh.com/_next/image?url=https%3A%2F%2Fwww.filepicker.io%2Fapi%2Ffile%2FA90ijraxStiEoemCcNUn&w=384&q=75"
@@ -21,7 +21,7 @@ export const CourseCard = ({course} : {course: CourseCard}) => {
                 <>
                     <div className="flex flex-nowrap justify-between mb-4">
                         <h2 className="text-white font-bold"><a className="hover:text-violet-400 cursor-pointer">{course.title}</a></h2>
-                        <DurationIcon hour="11h"></DurationIcon>
+                        <DurationIcon hour="11h" />
                     </div>
                     <p className="mb-4">{course.description}</p>
                     {isPublished ? 

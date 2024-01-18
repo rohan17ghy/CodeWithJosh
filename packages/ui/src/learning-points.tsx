@@ -1,6 +1,6 @@
 import { Check } from "./icons";
 
-export const LearningPoints = ({points} : { points: string[] }) => {
+export const LearningPoints = ({points} : { points: string[] }):JSX.Element => {
     return (
         <ul className="space-y-4">
             {points.map((p, index) => (

@@ -1,6 +1,6 @@
 import { CircleFilled } from "./icons"
 
-const VerticalStepper = () => {
+export const VerticalStepper = ():JSX.Element => {
   return (
     <div className="my-5">
         <div className="flex items-stretch">
@@ -39,5 +39,3 @@ const VerticalStepper = () => {
     </div>
     )
 }
-
-export default VerticalStepper

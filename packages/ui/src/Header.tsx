@@ -1,6 +1,5 @@
-import { Header, Group, Burger } from '@mantine/core';
+import { Header, Group, Burger, Button } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { Button } from '@mantine/core'
 // import logo from '../../public/logo.png';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +8,7 @@ interface HeaderSimpleProps {
   links: { link: string; label: string }[];
 }
 
-export function HeaderSimple({ links }: HeaderSimpleProps) {
+export const HeaderSimple = ({ links }: HeaderSimpleProps): JSX.Element =>  {
   const [opened, { toggle }] = useDisclosure(false);
 
   const items = links.map((link) => (

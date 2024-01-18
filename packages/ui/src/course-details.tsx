@@ -1,14 +1,14 @@
-import ButtonCourse from "./ButtonCourse"
-import CourseOverview from "./CourseOverview"
-import { LearningPoints } from "./LearningPoints";
-import Rating from "./Rating"
 import { AspectRatio } from '@mantine/core';
+import {ButtonCourse} from "./button-course"
+import {CourseOverview} from "./course-overview"
+import { LearningPoints } from "./learning-points";
+import {Rating} from "./rating";
 import { Bulb, ProfileIcon, QuestionMark, Tasks } from "./icons";
-import { CourseContent } from "./CourseContent";
-import TargetStudent from "./TargetStudent";
-import Prerequisites from "./Prerequisites";
+import { CourseContent } from "./course-content";
+import {TargetStudent} from "./target-student";
+import {Prerequisites} from "./prerequisites";
 
-const CourseDetails = () => {
+const CourseDetails = ():JSX.Element => {
     
     const points = [
         "Confidently build front-end apps with React and TypeScript",
@@ -30,12 +30,12 @@ const CourseDetails = () => {
                 <div className="max-w-lg text-center md:text-left pt-5 lg:pt-24">
                     <h1 className=" text-4xl text-white font-extrabold ">React 18 for Beginners</h1>
                     <p className="text-xl md:text-2xl leading-7 md:leading-9 my-5">A step-by-step guide to building web apps with React 18+ and TypeScript</p>
-                    <Rating className="my-10 justify-center md:justify-start"></Rating>
+                    <Rating className="my-10 justify-center md:justify-start" />
                     <ButtonCourse className=" w-full md:w-auto mt-3 bg-gradient-to-r from-pink-500 to-violet-600 group">Access All Courses for $29/M</ButtonCourse>
                     <div className="mt-3 flex items-center justify-center md:justify-start ">
-                        <hr className="inline-block w-6 mr-2 bg-white"></hr>
+                        <hr className="inline-block w-6 mr-2 bg-white" />
                         <span className="text-white">or</span>
-                        <hr className="inline-block w-6 ml-2 bg-white"></hr>
+                        <hr className="inline-block w-6 ml-2 bg-white" />
                     </div>
                     <ButtonCourse className=" w-full md:w-auto mt-3 bg-violet-600 hover:bg-violet-700">Buy this course for $10 <span className=" line-through ml-1 text-xs">$149</span></ButtonCourse>
                     
@@ -44,7 +44,7 @@ const CourseDetails = () => {
             </div>    
             <div className="my-20">
                 <h2 className=" text-white text-center font-bold my-12 mb-10 text-3xl">Clear. Concise. Comprehensive.</h2>
-                <p className="mb-14 text-center max-w-xl mx-auto text-xl leading-8">Tired of piecing together disconnected tutorials or dealing with rambling, confusing instructors? This course is for you! It's perfectly structured into a series of bite-sized, easy-to-follow videos that cover both theory and practice.</p>
+                <p className="mb-14 text-center max-w-xl mx-auto text-xl leading-8">Tired of piecing together disconnected tutorials or dealing with rambling, confusing instructors? This course is for you! It&apos;s perfectly structured into a series of bite-sized, easy-to-follow videos that cover both theory and practice.</p>
                 <AspectRatio className='mx-auto' ratio={16 / 9}>
                     <iframe
                         src="https://res.cloudinary.com/codewithmosh/video/upload/v1685377456/promo-videos/website-intro.mp4"
@@ -60,7 +60,7 @@ const CourseDetails = () => {
                     <Bulb className="text-violet-500" />
                 </div>                
                 <span className="text-violet-500 mb-3 inline-block font-medium md:font-semibold">Highly practical</span>
-                <h2 className="text-3xl text-white font-extrabold mb-6">What You'll Learn</h2>
+                <h2 className="text-3xl text-white font-extrabold mb-6">What You&apos;ll Learn</h2>
                 <LearningPoints points={points} />
             </div>
             <div className="mx-4 mb-20">

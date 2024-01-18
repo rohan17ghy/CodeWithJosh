@@ -1,6 +1,5 @@
-import {ReactNode} from 'react';
 
-const Rating = ({ className }: {className: ReactNode}) => {
+export const Rating = ({ className }: {className: string}):JSX.Element => {
   return (
     <div className={`flex items-center gap-2 ${className}`}>
         <span className="font-semibold text-lg">4.7</span>
@@ -9,5 +8,3 @@ const Rating = ({ className }: {className: ReactNode}) => {
     </div>
   )
 }
-
-export default Rating

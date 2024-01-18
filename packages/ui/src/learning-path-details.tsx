@@ -1,6 +1,6 @@
-import VerticalStepper from "./VerticalStepper"
+import {VerticalStepper} from "./vertical-stepper"
 
-const LearningPathDetails = () => {
+const LearningPathDetails = ():JSX.Element => {
 
     const learningPathDetails = {
         heading: "Front-end Development",

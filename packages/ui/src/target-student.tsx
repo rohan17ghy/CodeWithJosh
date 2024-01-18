@@ -1,6 +1,6 @@
 import { BulletIcon } from "./icons"
 
-const TargetStudent = ({className, points}: { className?: string, points: string[]}) => {
+export const TargetStudent = ({className, points}: { className?: string, points: string[]}):JSX.Element => {
     points = [
         "Beginners who want to learn React from scratch and build real-world apps",
         "React developers who want to fill in the gaps in their knowledge and take their skills to the next level",
@@ -21,5 +21,3 @@ const TargetStudent = ({className, points}: { className?: string, points: string
         </div>
     )
 }
-
-export default TargetStudent

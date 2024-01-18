@@ -1,6 +1,6 @@
-import {CourseCard} from './CourseCard';
+import {CourseCard} from './course-card';
 
-const Prerequisites = ({className, paras, courses}: {className:string, paras: string[], courses: CourseCard[]}) => {
+export const Prerequisites = ({className, paras, courses}: {className:string, paras: string[], courses: CourseCard[]}):JSX.Element => {
     paras =[
         "You don't need prior knowledge of React to take this course. However, you should have some basic knowledge of web development, including HTML, CSS, and modern JavaScript.",
         "Please note that we'll be using TypeScript in this course, but don't worry if you've never used TypeScript before - I'll cover everything from scratch.",
@@ -39,5 +39,3 @@ const Prerequisites = ({className, paras, courses}: {className:string, paras: st
     
     )
 }
-
-export default Prerequisites

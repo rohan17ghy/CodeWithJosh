@@ -1,17 +1,12 @@
-import {ReactNode} from 'react'
+import type {ReactNode} from 'react'
 
-const Card = ({imgSrc, content}: {imgSrc:string, content: ReactNode}) => {
-
-    return (
+export const Card = ({imgSrc, content}: {imgSrc:string, content: ReactNode}): JSX.Element => {
+    
+return (
         <div className="max-w-[350px] rounded-md border-custom-border border hover:outline-none hover:border-gray-400 ">
-            <a href="#">
-                <img src={imgSrc} alt="" />
-            </a>
+            <img src={imgSrc} alt="" className='cursor-pointer' />
             <div className="p-7">
                 {content}
             </div>
         </div>
-        )
-}
-
-export default Card
+)};

@@ -1,5 +1,4 @@
-
-const TextBox = () => {
+export const TextBox = ():JSX.Element => {
     return (
         <div className="block lg:w-[23rem] w-full mt-2 rounded-md shadow-sm">
             <input 
@@ -13,5 +12,3 @@ const TextBox = () => {
         </div>
     )
 }
-
-export default TextBox

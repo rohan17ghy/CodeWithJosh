@@ -33,7 +33,7 @@ function classNames(...classes: string[]): string {
   return classes.filter(Boolean).join(' ')
 }
 
-function Select() : JSX.Element {
+export const Select = (): JSX.Element =>  {
   const [current, setCurrent] = useState(people[3])
 
   return (
@@ -98,5 +98,3 @@ function Select() : JSX.Element {
     </Listbox>
   )
 }
-
-export { Select }
