@@ -13,7 +13,7 @@ export interface CourseCard {
 
 export const CourseCard = ({course} : {course: CourseCard}):JSX.Element => {
   
-    const [isPublished, setIsPublished] = useState(true) 
+    const [isPublished] = useState(true) 
     return (
         <Card
             imgSrc="https://codewithmosh.com/_next/image?url=https%3A%2F%2Fwww.filepicker.io%2Fapi%2Ffile%2FA90ijraxStiEoemCcNUn&w=384&q=75"

@@ -1,6 +1,6 @@
 import {Card} from "./card"
 
-const LearningPaths = ():JSX.Element => {
+export const LearningPaths = ():JSX.Element => {
 
     const learningPaths = [{
         heading: "Fundamentals",
@@ -35,5 +35,3 @@ const LearningPaths = ():JSX.Element => {
     </div>
     )
 }
-
-export { LearningPaths }

@@ -15,7 +15,7 @@ export const CourseOverview = ():JSX.Element => {
                 <h2 className="uppercase text-lg font-bold tracking-wide">Course Overview</h2>
                 <div className=" w-16 h-[5px] bg-gradient-to-r from-pink-500 to-violet-600 mt-4 mb-10" />
                 <ul>
-                    {overviews.map((item, index) => (
+                    {overviews.map((item) => (
                         <li key={item.text} className=" mt-4 font-normal">
                             <div className="flex items-center text-lg">
                                 <item.icon className="text-custom-iconColor" />
