@@ -38,6 +38,7 @@ module.exports = {
     "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
     "react/jsx-sort-props": "off",
     "jsx-a11y/anchor-is-valid": "off",
-    "@typescript-eslint/no-unused-vars": "off"
+    "@typescript-eslint/no-unused-vars": "off",
+    "import/order": "off"
   },
 };
