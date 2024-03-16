@@ -1,5 +1,7 @@
 import express from 'express';
-const prisma = require('db');
+//const {prisma} = require('db');
+
+import { prisma } from 'db'
 
 const router = express.Router();
 
