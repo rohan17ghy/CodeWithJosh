@@ -15,3 +15,4 @@ export { ProfileIcon } from './profile-icon';
 export {BulletIcon} from './bullet-icon';
 export {QuestionMark} from './question-mark';
 export {CircleFilled} from './circle-filled';
+export {Loader} from './loader'

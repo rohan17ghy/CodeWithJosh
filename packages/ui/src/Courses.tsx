@@ -4,10 +4,13 @@ import { CourseCard } from "./course-card";
 import { useEffect, useState } from "react";
 import { getAllCourses } from 'utils';
 import type { Course } from "db";
+import { Loader } from "./icons";
 
 export const Courses = (): JSX.Element => 
 {
     const [courses, setCourses] = useState<Course[]>([]);
+    const [loading, setLoading] = useState(true);
+
     useEffect(() => {
         getAllCourses()
         .then((result) => {
@@ -15,9 +18,12 @@ export const Courses = (): JSX.Element =>
         })
         .catch(() => {            
             setCourses([]);
+        }).finally(() => {
+            setLoading(false);
         })
-    }, [])
-    
+    }, [])  
+
+
 
     return (
         <div>
@@ -29,28 +35,28 @@ export const Courses = (): JSX.Element =>
                 <TextBox />
                 <Select />
             </div>
-            <div className="container mx-auto mt-20  overflow-hidden">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {/* <CourseCard course={{ 
-                        title: 'Mastering Next.js 13 with TypeScript',
-                        description: 'Become the best coder you can be with unlimited access to all the existing and future courses',
-                        duration: 11,
-                        newPrice: 15, 
-                        oldPrice: 149, 
-                        image: 'https://codewithmosh.com/_next/image?url=https%3A%2F%2Fwww.filepicker.io%2Fapi%2Ffile%2FA90ijraxStiEoemCcNUn&w=384&q=75'}} /> */}
-                    {courses.map((c) => (
-                        <CourseCard 
-                            key={c.id}
-                            course={{ 
-                                title: c.title,
-                                description: c.description,
-                                duration: c.duration,
-                                newPrice: c.newPrice, 
-                                oldPrice: c.oldPrice, 
-                                image: 'https://codewithmosh.com/_next/image?url=https%3A%2F%2Fwww.filepicker.io%2Fapi%2Ffile%2FA90ijraxStiEoemCcNUn&w=384&q=75'}} />
-                    ))}    
-                </div>
-                
+            <div className="container mx-auto mt-20  overflow-hidden">                  
+                {loading ? 
+                    (<div className="flex items-center justify-center">
+                        <Loader/>
+                    </div>)
+                    :
+                    (<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {courses.map((c) => (
+                            <CourseCard
+                                key={c.id}
+                                course={{
+                                    title: c.title,
+                                    description: c.description,
+                                    duration: c.duration,
+                                    newPrice: c.newPrice, 
+                                    oldPrice: c.oldPrice, 
+                                    image: 'https://codewithmosh.com/_next/image?url=https%3A%2F%2Fwww.filepicker.io%2Fapi%2Ffile%2FA90ijraxStiEoemCcNUn&w=384&q=75'
+                                }}
+                            />                            
+                        ))}
+                    </div>)
+                }
             </div>
         </div>
   )
